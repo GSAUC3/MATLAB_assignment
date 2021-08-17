@@ -274,7 +274,13 @@ ylabel('Imaginary part of e');
 
 
 ```
-![sint vs t][https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sin%20dsp%201.jpg]
+<p float="left">
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sin%20dsp%201.jpg" width=450 height=350>
+
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/tan%20x%20dsp%201.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/cos%20dsp%201.jpg" width=450 height=350>
+  <img src="https://user-images.githubusercontent.com/55054089/129690614-cba1bf5a-5504-43f7-861c-5a169f4d227d.jpg" width=450 height=350>
+</p>
 
 2. Create an array of time (𝑡) using 'linspace' function. Plot the parametric function 𝑥 = 𝑐𝑜𝑠(𝑡), 𝑦 = 𝑠𝑖𝑛(𝑡) and 𝑧 = 𝑡 using 'plot3' function. Plot different projections of the parametric function along XY, YZ and ZX plane using 'view' functions. 
 ```Matlab
