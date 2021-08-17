@@ -33,6 +33,8 @@ xlabel('Discrete time samples [n]');
 title('x[n] and convolution of x[n] with itself');
 grid on
 ```
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%202/1%20b.jpg" width=480 height=360>
+
 2. Convolution with delta function
 a. Deduce the output function for an input 𝑥[𝑛] convolved with discrete delta function 𝛿[𝑛] (in your notebook).
 
