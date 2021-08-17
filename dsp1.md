@@ -300,7 +300,21 @@ stem(unit_step);
 
 b. Create an array of 𝑡 where −2𝜋≤ 𝑡≤ 2𝜋 using “linspace”. Create a sinusoidal function and plot it with respect to time. 
 
+```
+
+t=linspace(-2*pi,2*pi);
+s=sin(t);
+plot(t,s);
+xlabel('time t');
+ylabel('sin(t) curve');
+title('graph of sine with respect to time');
+
+```
+
 c. Multiply 𝑠𝑖𝑛(𝑡) and unit step function and plot the entire graph in the same window. 
+```
+
+```
 
 2. Plot a ramp 𝑢𝑟(𝑡) with same time axis. Provide a shift of 2 sec along t-axis. 
 ```
