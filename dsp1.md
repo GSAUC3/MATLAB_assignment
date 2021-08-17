@@ -271,8 +271,6 @@ plot(real(e),imag(e));
 title('Graph of real vs imaginary part of e^(i*theta)')
 xlabel('Real part of e');
 ylabel('Imaginary part of e');
-
-
 ```
 <p float="left">
 <img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sin%20dsp%201.jpg" width=450 height=350>
@@ -291,48 +289,41 @@ t=tand(d);
 plot3(c,s,d)
 ```
 <p float="left">
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/3d%20dsp%201.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/1.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/2.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/3.jpg" width=450 height=350>
 </p>
    
 E) Generation of signals (write mathematical expression for each of the function and describe in words of the summary of what you have done for each of the problem). 
 1. Unit step and sinusoidal functions 
 a. Create an array of 100 elements using “ones” and “zeros”. Create an array “unit step” by making first 50 elements to be 0 and next 50 to be 1. Use “stem” to plot the graph with suitable title, X and Y labels. 
+
 ```Matlab
 z= zeros(50);
 o=ones(50);
 unit_step=[z;o];
-
 stem(unit_step);
-  
- 
 ```
 <p float="left">
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/dsp%201%20unit%20step.jpg" width=450 height=350>
+
 </p>
 b. Create an array of 𝑡 where −2𝜋≤ 𝑡≤ 2𝜋 using “linspace”. Create a sinusoidal function and plot it with respect to time. 
 
 ```Matlab
-
 t=linspace(-2*pi,2*pi);
 s=sin(t);
 plot(t,s);
 xlabel('time t');
 ylabel('sin(t) curve');
 title('graph of sine with respect to time');
-
 ```
 <p float="left">
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sint%20vs%20t%20(E%201%20b).jpg" width=450 height=350>
+
 </p>
+
 c. Multiply 𝑠𝑖𝑛(𝑡) and unit step function and plot the entire graph in the same window. 
 ```Matlab
 t=linspace(-2*pi,2*pi);
@@ -346,13 +337,12 @@ xlabel('time t');
 ylabel('sin t * unit_step');
 ```
 <p float="left">
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/e%201%20c.jpg" width=450 height=350>
+
 </p>
 
 2. Plot a ramp 𝑢𝑟(𝑡) with same time axis. Provide a shift of 2 sec along t-axis. 
+
 ```Matlab
 t = linspace(-2*pi,2*pi);
 u=t-2;
@@ -360,11 +350,10 @@ u=u.*(u>0);
 plot(t,u);
 ```
 <p float="left">
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
-<img src="" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/ramp%20dsp1.jpg" width=450 height=350>
+
 </p>
+
 3. Create a delta function where 𝑡 is closest to 𝜋 (since “linspace” command is used for
 creating “t” therefore, there may not be an element where t = pi. First find out the
 absloute difference (“abs”) between t and pi. After that find out the position and value of
