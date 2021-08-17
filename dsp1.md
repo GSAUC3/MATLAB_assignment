@@ -313,7 +313,15 @@ title('graph of sine with respect to time');
 
 c. Multiply 𝑠𝑖𝑛(𝑡) and unit step function and plot the entire graph in the same window. 
 ```
+t=linspace(-2*pi,2*pi);
+s=sin(t);
+u=heaviside(t);
+plot(t,u)
+x=s.*u;
 
+plot(t,x) 
+xlabel('time t');
+ylabel('sin t * unit_step');
 ```
 
 2. Plot a ramp 𝑢𝑟(𝑡) with same time axis. Provide a shift of 2 sec along t-axis. 
