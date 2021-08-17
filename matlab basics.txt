@@ -1,0 +1,2 @@
+y = linspace(x1,x2,n) generates n points. The spacing between the points is 
+(x2-x1)/(n-1).
