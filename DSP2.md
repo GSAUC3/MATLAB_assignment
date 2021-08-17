@@ -73,6 +73,8 @@ xlabel('Discrete time samples [n]');
 title('Convolution of Discrete Gaussian and Shifted Discrete Delta Function');
 grid on
 ```
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%202/2%20b.jpg" width=480 height=360>
+
 c. Create a discrete pulse train (comb function) and find out the convolution of it with the Gaussian. Use ‘pulstran’ to create pulse train.
 
 answer:
@@ -108,6 +110,8 @@ xlabel('time samples');
 title('convolution of comb function with gaussian function');
 grid on
 ```
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%202/2%20c.jpg" width=480 height=360>
+
 3. Correlation
 a. Create two 1D vectors [1 2 3 4] and [4 3 2 1] and calculate their correlation.
 
@@ -121,6 +125,8 @@ xlabel('Values');
 title('Correlation of x and Y vector');
 grid on
 ```
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%202/3%20a.jpg" width=480 height=360>
+
 b. Perform the correlation using ‘xcorr’ in MATLAB. How would you be able to perform convolution using ‘xcorr’ function
 
 answer:
