@@ -154,6 +154,97 @@ ans =
    1   1   1   1
 
 ```
+2. Create an array X with 10 elements starting from 1 to 19 with an interval of 2. 
+a. Another array y = 1./x and w = y’ (transpose), u = x*y’ 
+```
+a=linspace(1,19,10)
+a =
+     1     3     5     7     9    11    13    15    17    19
+
+y = 1./a;
+>> y
+y =
+    1.0000    0.3333    0.2000    0.1429    0.1111    0.0909    0.0769    0.0667    0.0588    0.0526
+
+>> w = y' 
+w =
+
+    1.0000
+    0.3333
+    0.2000
+    0.1429
+    0.1111
+    0.0909
+    0.0769
+    0.0667
+    0.0588
+    0.0526
+
+>> u = a*y'
+u =
+    10
+```
+b. Create another array with ex and present the element and set of data side by side. 
+```
+p=exp(a)
+p =
+   1.0e+08 *
+
+    0.0000    0.0000    0.0000    0.0000    0.0001    0.0006    0.0044    0.0327    0.2415    1.7848
+```
+3. Matrix D contains the following values: 
+
+5 	6 	2 
+
+-10 	3 	21 
+
+4 	10 	1 
+
+ Write down the values you would expect the matrix E to take after executing the following statements. 
+
+`a. E = D(1:2,2:3) `
+
+`b. E = D(1:2:3,3:-1:2)` 
+```
+>> d=[5 6 2; -10 3 21; 4 10 1]
+
+d =
+
+     5     6     2
+   -10     3    21
+     4    10     1
+>> E=d(1:2,2:3)
+
+E =
+
+     6     2
+     3    21
+>> e=d(1:2:3,3:-1:2)
+
+e =
+
+     2     6
+     1    10
+```
+
+c. Write down the MATLAB commands you would use to extract the following elements from D 
+
+(i) Row 1 
+
+(ii) The sub-array:
+5 	2 
+-10 	21 
+```
+i.	disp(d(1:1,:))
+
+     	       5     6     2
+ii.	disp(d(1:2,1:2:3))
+     5     2
+   -10    21
+```
+
+D) Use of Plot function 
+
 
 1. Plot angle vs sine, cosine and tangent of angle 𝜃 where 0≤𝜃≤2𝜋. Plot real and imaginary values of exp(𝑗𝜃) in a separate figure. 
 a. Label X and Y axis and put a suitable title of the graph using “xlabel”, “ylabel” and “title” commands. Use “axis” command to limit the X and Y axis of the graph. 
@@ -183,3 +274,39 @@ ylabel('Imaginary part of e');
 
 
 ```
+
+2. Create an array of time (𝑡) using 'linspace' function. Plot the parametric function 𝑥 = 𝑐𝑜𝑠(𝑡), 𝑦 = 𝑠𝑖𝑛(𝑡) and 𝑧 = 𝑡 using 'plot3' function. Plot different projections of the parametric function along XY, YZ and ZX plane using 'view' functions. 
+```
+d=linspace(0,360,20);
+s=sind(d);
+c=cosd(d);
+t=tand(d);
+plot3(c,s,d)
+```
+ 
+   
+E) Generation of signals (write mathematical expression for each of the function and describe in words of the summary of what you have done for each of the problem). 
+1. Unit step and sinusoidal functions 
+a. Create an array of 100 elements using “ones” and “zeros”. Create an array “unit step” by making first 50 elements to be 0 and next 50 to be 1. Use “stem” to plot the graph with suitable title, X and Y labels. 
+```
+z= zeros(50);
+o=ones(50);
+unit_step=[z;o];
+
+stem(unit_step);
+  
+ 
+```
+
+b. Create an array of 𝑡 where −2𝜋≤ 𝑡≤ 2𝜋 using “linspace”. Create a sinusoidal function and plot it with respect to time. 
+
+c. Multiply 𝑠𝑖𝑛(𝑡) and unit step function and plot the entire graph in the same window. 
+
+2. Plot a ramp 𝑢𝑟(𝑡) with same time axis. Provide a shift of 2 sec along t-axis. 
+```
+t = linspace(-2*pi,2*pi);
+u=t-2;
+u=u.*(u>0);
+plot(t,u);
+```
+
