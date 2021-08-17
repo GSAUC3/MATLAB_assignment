@@ -4,7 +4,7 @@
 2. Check what are maximum and minimum no. that can be represented in MATLAB. What will happen if you use a number more than the maximum no.? 
 
 ans: Code is written in command line, not editor.
-```
+```Matlab
 1.	 pi
 ans= 3.1416
 >> a=pi;
@@ -37,7 +37,7 @@ B) Sinusoidal function
 1. Check the values of sin, cos and tan for angles (θ) 0 to 2*π with an interval of π/4. Check exp(j (θ)) for the same values. 
 
 Ans: 
-```
+```Matlab
 = linspace(0,2*pi,9)
 
 %% The spacing between the points is 
@@ -76,7 +76,7 @@ s =
 2. How would you calculate the values directly from degrees? (sind, cosd)
 
 ans:
-``` 
+```Matlab 
 >>x=linspace(0,360,9)
 x =
      0    45    90   135   180   225   270   315   360
@@ -92,7 +92,7 @@ c1 =
 3. Display the angle and the sine values. ('disp') 
 
 ans:
-```
+```Matlab
 >>disp(x)
      0    45    90   135   180   225   270   315   360
 >> disp(c)
@@ -111,7 +111,7 @@ d. 	 C = (B - A – 1)- 3*B/5.*A
 
 e. Use the logical expressions  A>B,A<B,A~=B 
 
-```
+```Matlab
 a. 	>> A = [ 8 5 -4 30] 
 A =
      8     5    -4    30
@@ -156,7 +156,7 @@ ans =
 ```
 2. Create an array X with 10 elements starting from 1 to 19 with an interval of 2. 
 a. Another array y = 1./x and w = y’ (transpose), u = x*y’ 
-```
+```Matlab
 a=linspace(1,19,10)
 a =
      1     3     5     7     9    11    13    15    17    19
@@ -185,7 +185,7 @@ u =
     10
 ```
 b. Create another array with ex and present the element and set of data side by side. 
-```
+```Matlab
 p=exp(a)
 p =
    1.0e+08 *
@@ -205,7 +205,7 @@ p =
 `a. E = D(1:2,2:3) `
 
 `b. E = D(1:2:3,3:-1:2)` 
-```
+```Matlab
 >> d=[5 6 2; -10 3 21; 4 10 1]
 
 d =
@@ -234,7 +234,7 @@ c. Write down the MATLAB commands you would use to extract the following element
 (ii) The sub-array:
 5 	2 
 -10 	21 
-```
+```Matlab
 i.	disp(d(1:1,:))
 
      	       5     6     2
@@ -252,7 +252,7 @@ b. Insert all of the above commands from apart from “axis” from the figure w
 
 ans:
 
-```
+```Matlab
 d=linspace(0,360,20);
 s=sind(d);
 c=cosd(d);
@@ -276,7 +276,7 @@ ylabel('Imaginary part of e');
 ```
 
 2. Create an array of time (𝑡) using 'linspace' function. Plot the parametric function 𝑥 = 𝑐𝑜𝑠(𝑡), 𝑦 = 𝑠𝑖𝑛(𝑡) and 𝑧 = 𝑡 using 'plot3' function. Plot different projections of the parametric function along XY, YZ and ZX plane using 'view' functions. 
-```
+```Matlab
 d=linspace(0,360,20);
 s=sind(d);
 c=cosd(d);
@@ -288,7 +288,7 @@ plot3(c,s,d)
 E) Generation of signals (write mathematical expression for each of the function and describe in words of the summary of what you have done for each of the problem). 
 1. Unit step and sinusoidal functions 
 a. Create an array of 100 elements using “ones” and “zeros”. Create an array “unit step” by making first 50 elements to be 0 and next 50 to be 1. Use “stem” to plot the graph with suitable title, X and Y labels. 
-```
+```Matlab
 z= zeros(50);
 o=ones(50);
 unit_step=[z;o];
@@ -300,7 +300,7 @@ stem(unit_step);
 
 b. Create an array of 𝑡 where −2𝜋≤ 𝑡≤ 2𝜋 using “linspace”. Create a sinusoidal function and plot it with respect to time. 
 
-```
+```Matlab
 
 t=linspace(-2*pi,2*pi);
 s=sin(t);
@@ -312,7 +312,7 @@ title('graph of sine with respect to time');
 ```
 
 c. Multiply 𝑠𝑖𝑛(𝑡) and unit step function and plot the entire graph in the same window. 
-```
+```Matlab
 t=linspace(-2*pi,2*pi);
 s=sin(t);
 u=heaviside(t);
@@ -325,7 +325,7 @@ ylabel('sin t * unit_step');
 ```
 
 2. Plot a ramp 𝑢𝑟(𝑡) with same time axis. Provide a shift of 2 sec along t-axis. 
-```
+```Matlab
 t = linspace(-2*pi,2*pi);
 u=t-2;
 u=u.*(u>0);
