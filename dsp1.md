@@ -274,6 +274,7 @@ ylabel('Imaginary part of e');
 
 
 ```
+![sint vs t][https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sin%20dsp%201.jpg]
 
 2. Create an array of time (𝑡) using 'linspace' function. Plot the parametric function 𝑥 = 𝑐𝑜𝑠(𝑡), 𝑦 = 𝑠𝑖𝑛(𝑡) and 𝑧 = 𝑡 using 'plot3' function. Plot different projections of the parametric function along XY, YZ and ZX plane using 'view' functions. 
 ```Matlab
@@ -332,3 +333,12 @@ u=u.*(u>0);
 plot(t,u);
 ```
 
+3. Create a delta function where 𝑡 is closest to 𝜋 (since “linspace” command is used for
+creating “t” therefore, there may not be an element where t = pi. First find out the
+absloute difference (“abs”) between t and pi. After that find out the position and value of
+the minimum of the above difference using “min” ). Select the values of 𝑠𝑖𝑛(𝑡), 𝑢(𝑡) and
+𝑢𝑟(𝑡) by using delta function
+
+```Matlab
+
+```
