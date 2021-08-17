@@ -14,6 +14,22 @@ b. Create a discrete rectangular pulse as shown 𝑥[𝑛]= [ 1 1 1 1 1↑], whe
 
 answer:
 ```Matlab
+n=-10:1:10;
+y=(n>=-2)-(n>=3);
+stem(n,y);
+grid on
+xlabel('Discrete time samples [n]');
+ylabel('x[n]');
+title('Discrete Rectangular pulse');
+%Convolution of the Discrete Rectangular Pulse with Itself - 
+c=conv(y,y,'same'); %conv(u,v,'same') returns only the central part of the convolution, the same size as u
+stem(n,y,'r');
+hold on %for plotting the DRP and the conv on the same graph
+stem(n,c);
+hold off
+xlabel('Discrete time samples [n]');
+title('x[n] and convolution of x[n] with itself');
+grid on
 ```
 2. Convolution with delta function
 a. Deduce the output function for an input 𝑥[𝑛] convolved with discrete delta function 𝛿[𝑛] (in your notebook).
