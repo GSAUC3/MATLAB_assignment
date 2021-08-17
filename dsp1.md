@@ -290,7 +290,12 @@ c=cosd(d);
 t=tand(d);
 plot3(c,s,d)
 ```
- 
+<p float="left">
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+</p>
    
 E) Generation of signals (write mathematical expression for each of the function and describe in words of the summary of what you have done for each of the problem). 
 1. Unit step and sinusoidal functions 
@@ -304,7 +309,12 @@ stem(unit_step);
   
  
 ```
-
+<p float="left">
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+</p>
 b. Create an array of 𝑡 where −2𝜋≤ 𝑡≤ 2𝜋 using “linspace”. Create a sinusoidal function and plot it with respect to time. 
 
 ```Matlab
@@ -317,7 +327,12 @@ ylabel('sin(t) curve');
 title('graph of sine with respect to time');
 
 ```
-
+<p float="left">
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+</p>
 c. Multiply 𝑠𝑖𝑛(𝑡) and unit step function and plot the entire graph in the same window. 
 ```Matlab
 t=linspace(-2*pi,2*pi);
@@ -330,6 +345,12 @@ plot(t,x)
 xlabel('time t');
 ylabel('sin t * unit_step');
 ```
+<p float="left">
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+</p>
 
 2. Plot a ramp 𝑢𝑟(𝑡) with same time axis. Provide a shift of 2 sec along t-axis. 
 ```Matlab
@@ -338,7 +359,12 @@ u=t-2;
 u=u.*(u>0);
 plot(t,u);
 ```
-
+<p float="left">
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+<img src="" width=450 height=350>
+</p>
 3. Create a delta function where 𝑡 is closest to 𝜋 (since “linspace” command is used for
 creating “t” therefore, there may not be an element where t = pi. First find out the
 absloute difference (“abs”) between t and pi. After that find out the position and value of
