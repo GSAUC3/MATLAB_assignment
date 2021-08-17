@@ -12,6 +12,7 @@ Discrete Fourier Transform (DFT):
 Inverse DFT (IDFT):
 PROBLEMS (PROVIDE LABELS AND TITLES OF THE PICTURES, CLEARLY)
 1. Fourier transform (FT) of common functions using ‘fft’ and ‘fftshift’ in MATLAB
+
 a. Find out the FT of discrete delta functions situated at 𝑛=0,1 𝑎𝑛𝑑 2, where −10≤𝑛≤10. Plot the graphs of real, imaginary, magnitude and phase parts, separately.
 
 answer:
@@ -28,6 +29,7 @@ answer:
 ```Matlab
 ```
 2. Discrete Fourier transform
+
 a. Find DFT by matrix multiplication of the sequence 𝑥[𝑛]=[1 2 3 4] in your notebook.
 
 answer:
