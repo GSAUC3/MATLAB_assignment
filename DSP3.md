@@ -183,7 +183,7 @@ axis([-5 5 0 5])
 plot(t,fftshift(abs(f)));
 title('Furier transform of a rectangular pulse');
 ```
-<img src="">
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%203/1%20c%20rectangular%20pulse.jpg">
 2. Discrete Fourier transform
 
 a. Find DFT by matrix multiplication of the sequence 𝑥[𝑛]=[1 2 3 4] in your notebook.
