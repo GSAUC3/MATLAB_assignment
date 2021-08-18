@@ -100,10 +100,10 @@ xlabel('x (discrete values)');
 ylabel('imaginary value of fft{dirac delta at x=2}');
 title('imaginary part vs discrete sample values');
 ```
-<p float='left>
-<img src="" >
-<img src="" >
-<img src="" >
+<p float="left">
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%203/1%20n%20is%200.jpg" >
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%203/1%20n%20is%201.jpg" >
+<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%203/1%20n%20is%202.jpg" >
 </p>
 
 b. Find out the FT of discrete cosinusoidal and sinusoidal signals with 5 cycles over the entire array-range of 𝑛=100 𝑎𝑛𝑑 101. Plot the graphs of real, imaginary, magnitude and phase parts, separately with frequency axis properly calculated. Check how the FT-patterns vary if the no. of arrays are equal to 2<sup>p</sup>, where 𝑝=6,7,8 𝑎𝑛𝑑 16.
