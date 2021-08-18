@@ -208,6 +208,7 @@ F[x[n]]=
 
 \end{array}\right)
 $$ 
+
 b. Write the code in MATLAB for the same. Use the command “fft” (algorithm for Fast Fourier transform) in MATLAB to compute the same for N=25. Write which is faster in the discussion(use ‘tic’ and ‘toc’).
 
 answer:
