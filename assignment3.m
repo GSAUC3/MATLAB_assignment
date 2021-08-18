@@ -1,4 +1,4 @@
-% answer of 1
+% answer of 1 a
 x=linspace(-10,10,21);
 d1=logical(dirac(x));
 d2=logical(dirac(x-1));
@@ -93,7 +93,7 @@ xlabel('x (discrete values)');
 ylabel('imaginary value of fft{dirac delta at x=2}');
 title('imaginary part vs discrete sample values');
 
-% answer 2
+% answer 1 b
 
 t=linspace(0,10*pi,100);
 y=sin(t);
@@ -144,3 +144,18 @@ subplot(2,2,4);
 stem(t,imag(fc)./real(fc));
 ylabel('Phase of (F.T{cos t})');xlabel('t');
 
+% 1 c 
+T = 1;
+t = -2.5 : 0.01 : 2.5;
+x = rectpuls(t,T);
+subplot(2,1,1)
+plot(t,x,'r');
+axis([-2.5 2.5 0 2])
+title({'Rectangular Pulse'})
+xlabel({'Time(s)'});
+ylabel('Ampltude');
+f=fft(x);
+subplot(2,1,2)
+axis([-5 5 0 5])
+plot(t,fftshift(abs(f)));
+title('Furier transform of a rectangular pulse');

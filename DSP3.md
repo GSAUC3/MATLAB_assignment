@@ -168,7 +168,22 @@ c. Find out the FT of discrete rectangular pulse.
 
 answer:
 ```Matlab
+T = 1;
+t = -2.5 : 0.01 : 2.5;
+x = rectpuls(t,T);
+subplot(2,1,1)
+plot(t,x,'r');
+axis([-2.5 2.5 0 2])
+title({'Rectangular Pulse'})
+xlabel({'Time(s)'});
+ylabel('Ampltude');
+f=fft(x);
+subplot(2,1,2)
+axis([-5 5 0 5])
+plot(t,fftshift(abs(f)));
+title('Furier transform of a rectangular pulse');
 ```
+<img src="">
 2. Discrete Fourier transform
 
 a. Find DFT by matrix multiplication of the sequence 𝑥[𝑛]=[1 2 3 4] in your notebook.
