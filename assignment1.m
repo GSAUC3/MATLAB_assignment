@@ -17,3 +17,9 @@ title('Graph of real vs imaginary part of e^(i*theta)')
 xlabel('Real part of e');
 ylabel('Imaginary part of e');
 
+%answer of 3d plot
+d=linspace(0,360,20);
+s=sind(d);
+c=cosd(d);
+t=tand(d);
+plot3(c,s,d)
