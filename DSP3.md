@@ -189,8 +189,25 @@ title('Furier transform of a rectangular pulse');
 a. Find DFT by matrix multiplication of the sequence 𝑥[𝑛]=[1 2 3 4] in your notebook.
 
 answer:
-```Matlab
-```
+
+
+$$
+F[x[n]]=
+\left(\begin{array}{cc} 
+1 & 1 & 1 & 1\\
+1 & -j &-1 &j\\
+1 & -1 &1 &-1\\
+1 & j &-1 &-j\\
+
+\end{array}\right)
+\left(\begin{array}{cc} 
+1\\ 
+2\\ 
+3\\ 
+4\\ 
+
+\end{array}\right)
+$$ 
 b. Write the code in MATLAB for the same. Use the command “fft” (algorithm for Fast Fourier transform) in MATLAB to compute the same for N=25. Write which is faster in the discussion(use ‘tic’ and ‘toc’).
 
 answer:
