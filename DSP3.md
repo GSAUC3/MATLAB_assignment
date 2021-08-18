@@ -100,7 +100,7 @@ xlabel('x (discrete values)');
 ylabel('imaginary value of fft{dirac delta at x=2}');
 title('imaginary part vs discrete sample values');
 ```
-<p float='left>
+<p float="left">
 <img src="" >
 <img src="" >
 <img src="" >
