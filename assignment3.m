@@ -1,3 +1,4 @@
+% answer of 1
 x=linspace(-10,10,21);
 d1=logical(dirac(x));
 d2=logical(dirac(x-1));
@@ -91,3 +92,5 @@ grid on;
 xlabel('x (discrete values)');
 ylabel('imaginary value of fft{dirac delta at x=2}');
 title('imaginary part vs discrete sample values');
+
+% answer 2
