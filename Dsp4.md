@@ -24,10 +24,10 @@ II. Solve Prob.
 
 1(a) using matrix method.
 ```
-Matrix Multiplication Method
-Matrix method represents the two given sequence x1(n) and x2(n) in matrix form.
+Matrix Multiplication Method algo --
+Two given sequence x1(n) and x2(n) in matrix form.
 
-1. x1 is repeated via circular shift of one sample at a time to form a N X N matrix.
+1. x1 is repeated via circular shift of one sample at a time to form a n X n matrix.
 
 2. x2 as column matrix.
 
@@ -38,19 +38,21 @@ CODE:
 clear
 clc
 x=[1 -1 -2 3 -1];
-x1=x';
+x1=(x');
 h=[1 2 3 0 0];
-h1=[1 2 3 0 0; 2 3 0 0 1; 3 0 0 1 2; 0 0 1 2 3; 0 1 2 3 0];
-y=h1*x1;
+h1=[1 0 0 3 2; 2 1 0 0 3; 3 2 1 0 0; 0 3 2 1 0; 0 0 3 2 1];
+y=h1*x1;  
 disp(y);
+
 ```
 output:
 ```
-    -7
+     8
     -2
-     4
-     1
-     4
+    -1
+    -4
+    -1
+
 ```
 b) Problems to be solved in MATLAB (pdf)
 
