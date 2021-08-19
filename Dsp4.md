@@ -58,6 +58,21 @@ b) Problems to be solved in MATLAB (pdf)
 
 I. Write a MATLAB program to the solution of Prob. 1(a(I)) using the command ‘cconv’ with appropriate choice of resulting vector length. Show that without this choice use of ‘cconv’ and ‘conv’ result in same vector.
 
+```Matlab
+clear
+clc
+x=[1 -1 -2 3 -1];
+h=[1 2 3];
+
+y=cconv(x,h);  
+disp(y);
+
+```
+output:
+```
+    1.0000    1.0000   -1.0000   -4.0000   -1.0000    7.0000   -3.0000
+```
+
 II. Write a program in MATLAB to implement circular convolution using matrix method of Prob. 1(a(II)) and show the results in pdf-file. 
     Hint: Use MATLAB command “gallery('circul',vector)” and/or “circshift” to create the circulant matrix of ℎ[𝑛]. Check whether the circulant matrix is same as the matrix obtained analytically.
 
