@@ -189,8 +189,30 @@ title('Furier transform of a rectangular pulse');
 a. Find DFT by matrix multiplication of the sequence 𝑥[𝑛]=[1 2 3 4] in your notebook.
 
 answer:
+```Matlab
+clear
+clc
+x=[1; 2; 3; 4]; % create 4x4 array
+a = zeros(4);
+%b = 1:9;
+%width = 3;
+[p,m] = size(a);
+for k = 1:1:p
+    for n = 1:1:m
+        s=(k-1)*(n-1);
+        a(k,n ) =exp((-1*1j*2*pi*s)/4); 
+    end
+end
+disp(a*x);
+```
+Output:
+```
+  10.0000 + 0.0000i
+  -2.0000 + 2.0000i
+  -2.0000 - 0.0000i
+  -2.0000 - 2.0000i
 
-
+```
 $$
 F[x[n]]=
 \left(\begin{array}{cc} 
@@ -213,6 +235,7 @@ b. Write the code in MATLAB for the same. Use the command “fft” (algorithm f
 
 answer:
 ```Matlab
+
 ```
 3. Find out the DFT of a sequence given by 𝑥[𝑛]=𝑎<sup>𝑛</sup>𝑢[𝑛] (notebook). Write a MATLAB code for the same for 25 elements (i.e. n=25).
 
