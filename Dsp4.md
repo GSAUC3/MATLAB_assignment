@@ -3,10 +3,55 @@
 1. Circular convolution
 a) Problems to be solved analytically (A4)
 
-    I. Find out the circular convolution of two column vectors 𝑥[𝑛]=[1 ,−1 ,−2 ,3 ,−1] and ℎ[𝑛]=[1,2,3] using concentric circle method. Appropriately use zero-padding, if required.
-    
-    II. Solve Prob. 1(a) using matrix method.
+I. Find out the circular convolution of two column vectors 𝑥[𝑛]=[1 ,−1 ,−2 ,3 ,−1] and ℎ[𝑛]=[1,2,3] using concentric circle method. Appropriately use zero-padding, if required.
 
+```Matlab
+clear
+clc
+x=[1 -1 -2 3 -1];
+h=[1 2 3 0 0];
+fx=fft(x);
+fh=fft(h);
+a=ifft(fx.*fh);
+disp(a);
+
+```
+  OUTPUT:
+  ```
+        8.0000   -2.0000   -1.0000   -4.0000   -1.0000
+  ```  
+II. Solve Prob. 
+
+1(a) using matrix method.
+```
+Matrix Multiplication Method
+Matrix method represents the two given sequence x1(n) and x2(n) in matrix form.
+
+1. x1 is repeated via circular shift of one sample at a time to form a N X N matrix.
+
+2. x2 as column matrix.
+
+3.The multiplication of two matrices = circular convolution.
+```
+CODE:
+```Matlab
+clear
+clc
+x=[1 -1 -2 3 -1];
+x1=x';
+h=[1 2 3 0 0];
+h1=[1 2 3 0 0;2 3 0 0 1;3 0 0 1 2;0 0 1 2 3;0 1 2 3 0];
+y=h1*x1;
+disp(y);
+```
+output:
+```
+    -7
+    -2
+     4
+     1
+     4
+```
 b) Problems to be solved in MATLAB (pdf)
 
 I. Write a MATLAB program to the solution of Prob. 1(a(I)) using the command ‘cconv’ with appropriate choice of resulting vector length. Show that without this choice use of ‘cconv’ and ‘conv’ result in same vector.
