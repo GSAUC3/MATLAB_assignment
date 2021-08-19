@@ -11,10 +11,11 @@ def cconv(h,x):
 # result = [[sum(a * b for a, b in zip(A_row, B_col))for B_col in zip(*B)]Sfor A_row in A]
 
 
-x1=([0 ,0 ,3 ,-1, 0])
-x2=[-1, 0, 1 ,3, 2]
-x3=[3, 2, 0, 1, 2]
-x4=[1, 2, 1 ,0, 0]
-h=([1, 1, 1 ,0, 0])
+def dft():
 
-print(cconv(h,x1))
+    a = np.zeros(25);
+    p,m = np.shape
+    print(p,m)
+
+dft()
+
