@@ -194,8 +194,6 @@ clear
 clc
 x=[1; 2; 3; 4]; % create 4x4 array
 a = zeros(4);
-%b = 1:9;
-%width = 3;
 [p,m] = size(a);
 for k = 1:1:p
     for n = 1:1:m
