@@ -138,7 +138,8 @@ output:
     3.0000
     1.0000
 ```
-    II. Overlap – add method (in A-4).
+
+II. Overlap – add method (in A-4).
 ```Matlab
 clear 
 clc
