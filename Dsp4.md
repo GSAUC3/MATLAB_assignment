@@ -95,6 +95,34 @@ output:
 ```
 III. Write a MATLAB program to the solution of Prob. 1(a(I)) using DFT. Hint: 𝑌(𝑘) = 𝐼𝐷𝐹𝑇 {𝐷𝐹𝑇(ℎ[𝑛])·𝐷𝐹𝑇(𝑥[𝑛])}
 
+```Matlab
+clear
+clc
+x=[1 -1 -2 3 -1];
+h=[1 2 3 0 0];
+a = zeros(5);
+[p,m] = size(a);
+%by Matix method
+
+for k = 1:1:p
+    for n = 1:1:m
+        s=(k-1)*(n-1);
+        a(k,n ) =exp((-1*1j*2*pi*s)/5); 
+    end
+end
+dftx=a*x';
+dfth=a*h';
+disp(ifft(dftx.*dfth));
+
+```
+output:
+```
+   8.0000 + 0.0000i
+  -2.0000 - 0.0000i
+  -1.0000 - 0.0000i
+  -4.0000 - 0.0000i
+  -1.0000 - 0.0000i
+```
 IV. Comment on the circulant matrix and resultant vector obtained from different methods.
 
 2. Overlap – save method and overlap – add method
