@@ -159,3 +159,78 @@ subplot(2,1,2)
 axis([-5 5 0 5])
 plot(t,fftshift(abs(f)));
 title('Furier transform of a rectangular pulse');
+
+%2 a
+clear
+clc
+x=[1; 2; 3; 4]; % create 4x4 array
+a = zeros(4);
+[p,m] = size(a);
+for k = 1:1:p
+    for n = 1:1:m
+        s=(k-1)*(n-1);
+        a(k,n ) =exp((-1*1j*2*pi*s)/4); 
+    end
+end
+disp(a*x);
+
+% 2 b
+clear
+clc
+x=linspace(1,25,25);
+x=x';
+a = zeros(25);
+[p,m] = size(a);
+%by Matix method
+tic
+for k = 1:1:p
+    for n = 1:1:m
+        s=(k-1)*(n-1);
+        a(k,n ) =exp((-1*1j*2*pi*s)/4); 
+    end
+end
+toc
+disp((a*x));
+
+%by fft
+tic
+y=(fft(x));
+toc
+disp((y));
+
+% 3
+clear
+clc
+% for a = 2
+a=2;
+n = linspace(1,25,25);
+y=a.^n;
+x = y.*heaviside(n);
+x1=x';
+a = zeros(25);
+[p,m] = size(a);
+for k = 1:1:p
+    for n = 1:1:m
+        s=(k-1)*(n-1);
+        a(k,n ) =exp((-1*1j*2*pi*s)/4); 
+    end
+end
+disp(a*x1);
+
+% 4
+clear
+clc
+
+a = zeros(8);
+[p,m] = size(a);
+% twiddle factor
+
+for k = 1:1:p
+    for n = 1:1:m
+        s=(k-1)*(n-1);
+        a(k,n ) =exp((-1*1j*2*pi*s)/4); 
+    end
+end
+
+disp(a);
+
