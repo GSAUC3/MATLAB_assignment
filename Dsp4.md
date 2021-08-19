@@ -63,14 +63,13 @@ clear
 clc
 x=[1 -1 -2 3 -1];
 h=[1 2 3];
-
-y=cconv(x,h);  
+y=cconv(x,h,5);
 disp(y);
 
 ```
 output:
 ```
-    1.0000    1.0000   -1.0000   -4.0000   -1.0000    7.0000   -3.0000
+      8.0000   -2.0000   -1.0000   -4.0000   -1.0000
 ```
 
 II. Write a program in MATLAB to implement circular convolution using matrix method of Prob. 1(a(II)) and show the results in pdf-file. 
