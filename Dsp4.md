@@ -76,6 +76,24 @@ output:
 II. Write a program in MATLAB to implement circular convolution using matrix method of Prob. 1(a(II)) and show the results in pdf-file. 
     Hint: Use MATLAB command “gallery('circul',vector)” and/or “circshift” to create the circulant matrix of ℎ[𝑛]. Check whether the circulant matrix is same as the matrix obtained analytically.
 
+```Matlab
+clear
+clc
+x=[1 -1 -2 3 -1];
+x1=(x');
+h=[1 2 3 0 0];
+h2=[circshift(h,1);circshift(h,2);circshift(h,3);circshift(h,4);circshift(h,5)];
+disp(h2*x1);
+
+```
+output:
+```
+     4
+     1
+     4
+    -2
+    -7
+```
 III. Write a MATLAB program to the solution of Prob. 1(a(I)) using DFT. Hint: 𝑌(𝑘) = 𝐼𝐷𝐹𝑇 {𝐷𝐹𝑇(ℎ[𝑛])·𝐷𝐹𝑇(𝑥[𝑛])}
 
 IV. Comment on the circulant matrix and resultant vector obtained from different methods.
