@@ -103,7 +103,75 @@ IV. Comment on the circulant matrix and resultant vector obtained from different
     a) Find the output 𝑦(𝑛) of a filter whose impulse response is ℎ(𝑛)=[1 ,1 ,1 ] and input signal 𝑥(𝑛) = [ 3 ,−1 ,0 ,1 ,3 ,2 ,0 ,1 ,2 ,1] by using
 
     I. Overlap – save method (in A-4) and
-    
+
+```Matlab
+clear 
+clc
+x1=[0 0 3 -1 0];
+x2=[-1 0 1 3 2];
+x3=[3 2 0 1 2];
+x4=[1 2 1 0 0];
+h=[1 1 1 0 0];
+y1=cconv(x1,h,5);
+y2=cconv(x2,h,5);
+y3=cconv(x3,h,5);
+y4=cconv(x4,h,5);
+y1=y1(3:end);
+y2=y2(3:end);
+y3=y3(3:end);
+y4=y4(3:end);
+y=cat(2,y1,y2,y3,y4);
+disp(y');
+```
+output:
+```
+    3.0000
+    2.0000
+    2.0000
+         0
+    4.0000
+    6.0000
+    5.0000
+    3.0000
+    3.0000
+    4.0000
+    3.0000
+    1.0000
+```
     II. Overlap – add method (in A-4).
+```Matlab
+clear 
+clc
+x1=[3 -1 0 0 0];
+x2=[1 3 2 0 0];
+x3=[0 1 2 0 0];
+x4=[1 0 0 0 0];
+h=[1 1 1 0 0];
+y1=cconv(x1,h,5);
+y2=cconv(x2,h,5);
+y3=cconv(x3,h,5);
+y4=cconv(x4,h,5);
+y1=y1(1:3);
+y2=y2(1:3);
+y3=y3(1:3);
+y4=y4(1:3);
+y=cat(2,y1,y2,y3,y4);
+disp(y');
+```
+output:
+```
+    3.0000
+    2.0000
+    2.0000
+    1.0000
+    4.0000
+    6.0000
+         0
+    1.0000
+    3.0000
+    1.0000
+    1.0000
+    1.0000
+```
 
 Use MATLAB to compute the necessary circular convolutions.
