@@ -280,10 +280,10 @@ xlabel('d');
 ```
 <p float="left">
 <img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sin%20dsp%201.jpg" width=450 height=350>
-
+<img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/figure2.jpg" width=450 height=350>
 <img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/tan%20x%20dsp%201.jpg" width=450 height=350>
 <img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/cos%20dsp%201.jpg" width=450 height=350>
-  <img src="https://user-images.githubusercontent.com/55054089/129690614-cba1bf5a-5504-43f7-861c-5a169f4d227d.jpg" width=450 height=350>
+  <img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/figure1.jpg" width=450 height=350>
 </p>
 
 2. Create an array of time (𝑡) using 'linspace' function. Plot the parametric function 𝑥 = 𝑐𝑜𝑠(𝑡), 𝑦 = 𝑠𝑖𝑛(𝑡) and 𝑧 = 𝑡 using 'plot3' function. Plot different projections of the parametric function along XY, YZ and ZX plane using 'view' functions. 
@@ -322,10 +322,10 @@ grid on
 
 ```
 <p float="left">
-<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/3d%20dsp%201.jpg" width=450 height=350>
-<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/1.jpg" width=450 height=350>
-<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/2.jpg" width=450 height=350>
-<img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/3.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/d3%20dsp%201.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/fig%201.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/fig%202.jpg" width=450 height=350>
+<img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/fig%203.jpg" width=450 height=350>
 </p>
    
 E) Generation of signals (write mathematical expression for each of the function and describe in words of the summary of what you have done for each of the problem). 
