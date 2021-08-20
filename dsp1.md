@@ -394,5 +394,24 @@ the minimum of the above difference using “min” ). Select the values of 𝑠
 𝑢𝑟(𝑡) by using delta function
 
 ```Matlab
+clear
+clc
+d=linspace(-5,5,11);
+d2=abs(d-pi);
+mi=min(d2);
+delta=dirac(d2-mi);
+idx = delta == Inf; % find Inf
+delta(idx) = 5;     % set Inf to finite value
+stem(d,delta);
+disp(mi);
+```
+
+output:
+```
+min value =  0.1416
 
 ```
+<p float="left">
+<img src="https://github.com/Dummyjar/MATLAB_assignment/blob/master/dsp%201/last.jpg" width=450 height=350>
+
+</p>
