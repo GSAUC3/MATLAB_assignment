@@ -253,10 +253,10 @@ b. Insert all of the above commands from apart from “axis” from the figure w
 ans:
 
 ```Matlab
-d=linspace(0,360,20);
-s=sind(d);
-c=cosd(d);
-t=tand(d);
+d=linspace(0,2*pi,10);
+s=sin(d);
+c=cos(d);
+t=tan(d);
 plot(d,t);
 xlabel('d');
 ylabel('tan d');
@@ -266,11 +266,17 @@ ylabel('sin d');
 plot(d,c);
 xlabel('d');
 ylabel('cos d');
-e=exp(i*d);
-plot(real(e),imag(e));
-title('Graph of real vs imaginary part of e^(i*theta)')
-xlabel('Real part of e');
-ylabel('Imaginary part of e');
+e1=exp(1i*d);
+figure(1);
+plot(d,real(e1));
+title('Graph of real of e^(i*theta) vs t')
+ylabel('Real part of e');
+xlabel('d');
+figure(2);
+plot(d,imag(e1));
+title('Graph of imaginary of e^(i*theta) vs t')
+ylabel('imaginary part of e');
+xlabel('d');
 ```
 <p float="left">
 <img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/sin%20dsp%201.jpg" width=450 height=350>
@@ -282,11 +288,38 @@ ylabel('Imaginary part of e');
 
 2. Create an array of time (𝑡) using 'linspace' function. Plot the parametric function 𝑥 = 𝑐𝑜𝑠(𝑡), 𝑦 = 𝑠𝑖𝑛(𝑡) and 𝑧 = 𝑡 using 'plot3' function. Plot different projections of the parametric function along XY, YZ and ZX plane using 'view' functions. 
 ```Matlab
-d=linspace(0,360,20);
-s=sind(d);
-c=cosd(d);
-t=tand(d);
-plot3(c,s,d)
+t = linspace(0,2000,500);
+x=sind(t);
+y=cosd(t);
+z=t;
+figure(1);
+plot3(x,y,z)
+grid on
+
+t = linspace(0,2000,500);
+x=sind(t);
+y=cosd(t);
+z=t;
+figure(2);
+plot3(x,y,z),view(0,0)
+grid on
+
+t = linspace(0,2000,500);
+x=sind(t);
+y=cosd(t);
+z=t;
+figure(3);
+plot3(x,y,z),view(0,90)
+grid on
+
+t = linspace(0,2000,500);
+x=sind(t);
+y=cosd(t);
+z=t;
+figure(4);
+plot3(x,y,z),view(90,0)
+grid on
+
 ```
 <p float="left">
 <img src="https://github.com/Dummyjar/MATLAB/blob/master/dsp%201/3d%20dsp%201.jpg" width=450 height=350>
