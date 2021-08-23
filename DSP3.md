@@ -111,6 +111,7 @@ b. Find out the FT of discrete cosinusoidal and sinusoidal signals with 5 cycles
 answer:
 ```Matlab
 
+
 t=linspace(0,10*pi,100);
 y=sin(t);
 fs=fft(y);
@@ -142,7 +143,7 @@ subplot(2,2,3);
 stem(t,abs(fs));
 ylabel('Magnitude of (F.T{sin t})');xlabel('t');
 subplot(2,2,4);
-stem(t,imag(fs)./real(fs));
+stem(t,atan(imag(fs)./real(fs)));
 ylabel('Phase of (F.T{sin t})');xlabel('t');
 figure(4);
 subplot(2,2,1);
@@ -155,7 +156,7 @@ subplot(2,2,3);
 stem(t,abs(fc));
 ylabel('Magnitude of (F.T{cos t})');xlabel('t');
 subplot(2,2,4);
-stem(t,imag(fc)./real(fc));
+stem(t,atan(imag(fc)./real(fc)));
 ylabel('Phase of (F.T{cos t})');xlabel('t');
 ```
 <p float="left">
